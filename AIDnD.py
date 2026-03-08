@@ -11,7 +11,7 @@ pygame.init()
 info = pygame.display.Info()
 WIDTH, HEIGHT = int(info.current_w * 0.9), int(info.current_h * 0.9)
 screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
-pygame.display.set_caption("AI D&D: Ultimate Engine Pro - Chronocraft Edition")
+pygame.display.set_caption("AIDND")
 
 BG_COLOR, PANEL_COLOR = (10, 12, 16), (22, 24, 30)
 ACCENT, WHITE, BORDER, GOLD_CLR = (0, 185, 255), (240, 245, 250), (60, 65, 80), (255, 215, 0)
@@ -343,5 +343,6 @@ def main():
 
         if ai_thinking: pygame.draw.circle(screen, ACCENT, (WIDTH-40, 40), 10)
         pygame.display.flip(); clock.tick(60)
+
 
 if __name__ == "__main__": main()
